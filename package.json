@@ -5,7 +5,13 @@
   "main": "index.js",
   "bin": "./bin/sq-cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +19,9 @@
   "dependencies": {
     "commander": "^3.0.0",
     "inquirer": "^6.5.1"
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2"
   }
 }
